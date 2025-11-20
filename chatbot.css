@@ -1,0 +1,51 @@
+body {
+  font-family: Inter, sans-serif;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.chat-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.chat-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.chat-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+  margin-bottom: 12px;
+}
+
+#chatLog {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.msg-bot {
+  background: #eef2ff;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.msg-user {
+  background: #e6f8ff;
+  margin-left: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.quick-btn {
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 4px;
+  border: none;
+}
