@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wellness Quick Check</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Consent Modal -->
+<div id="consentOverlay" class="consent-overlay" aria-hidden="false">
+  <div class="consent-box" role="dialog" aria-modal="true">
+    <h2>Quick privacy note</h2>
+    <p>This questionnaire is a <strong>non-diagnostic</strong> wellness check. We do not store answers unless you choose to save them. If you are in immediate danger, contact local emergency services now.</p>
+    <div style="display:flex;gap:8px;margin-top:12px;">
+      <button id="consentAccept" class="btn">I understand — start</button>
+      <button id="consentDecline" class="btn outline">Not now</button>
+    </div>
+  </div>
+</div>
+  <main class="container">
+    <header><h1>Wellness Quick Check</h1><p class="muted">Privacy-first checks: Mental | Feminine | Student</p></header>
+
+    <section class="tabs">
+      <button class="tab-btn active" data-tab="mental">Mental Health</button>
+      <button class="tab-btn" data-tab="feminine">Feminine Health</button>
+      <button class="tab-btn" data-tab="student">Student Special</button>
+    </section>
+
+    <section class="chat-panel">
+      <div id="chat" class="chat" role="log" aria-live="polite"></div>
+      <form id="replyForm" class="reply" autocomplete="off">
+        <input id="replyInput" placeholder="Type / choose answer..." aria-label="Answer input"/>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="report-area" id="reportArea" hidden>
+      <h3>Report</h3>
+      <div id="report"></div>
+      <div style="margin-top:12px;">
+        <button id="downloadPdf">Download PDF</button>
+        <button id="restart">Restart</button>
+      </div>
+    </section>
+
+    <footer style="margin-top:20px;font-size:13px;color:#666;">
+      <p>Note: This is a non-diagnostic tool. If you are in immediate danger, contact local emergency services.</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
